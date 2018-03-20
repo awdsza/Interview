@@ -10,5 +10,5 @@
 ## Contents
 - [Development](#Development)
 - Language
-    - [Java](#Java)
+    - [Java](#Java)
     - [JavaScript](#JavaScript)
