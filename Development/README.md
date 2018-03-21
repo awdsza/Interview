@@ -14,4 +14,4 @@
 3. REFACTOR : 반복되는 코드, 긴 메소드, 큰 클래스, 긴 매개변수 등 코드를 효율적으로 바꾸기.
 ## Reference
 - [Nesoy Blog](https://nesoy.github.io/articles/2017-01/TDD)
-- [gohn's Blog](http://hellogohn.com/post_one162}
+- [gohn's Blog](http://hellogohn.com/post_one162)
