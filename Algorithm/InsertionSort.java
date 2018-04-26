@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class InsertionSort {
-
     @Test
     public void test() {
         int[] arr2 = {6,4,1,8,9,2,7,5,3};
@@ -16,10 +15,10 @@ public class InsertionSort {
 		if (arr == null) return null;
         int[] result = arr;
         int min;
-        for(int i=0;i<result.length;i++){
+        for(int i=1;i<result.length;i++){
         	min = i;
-        	for(int j=i+1;j<result.length;j++){
-        		if(result[min] > result[j] && min <= j){
+        	for(int j=i-1;j>=0;j--){
+        		if(result[min] < result[j] ){
         			int _tmp = result[j];
         			result[j] = result[min];
         			result[min] = _tmp;
