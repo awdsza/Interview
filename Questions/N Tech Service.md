@@ -3,6 +3,14 @@
 # N Tech Service 웹 개발자 경력(전화면접)
 ## 1.언어
 ### 1) 객체 지향의 Solid란?
+* SRP(단일책임의 원칙 : Single Responsibility Principle)
+
+    작성된 클래스는 하나의 기능만 가지며 서비스는 하나의 책임을 수행하는데 집중되어야 한다는 원칙이다.
+
+* OCP (개방폐쇄의 원칙: Open Close Principle)
+* LSP (리스코브 치환의 원칙: The Liskov Substitution Principle)
+* ISP (인터페이스 분리의 원칙: Interface Segregation Principle)
+* DIP (의존성역전의 원칙: Dependency Inversion Principle)
 ### 2) 본인이 사용했던 디자인 패턴은?
 ## 2.Java
 ### 1) Java7과 8의 차이점은?
@@ -33,3 +41,9 @@
 ### 3) Test에 Mokking은 무엇이며 왜 필요한가?
 ### 4) CS REF의 취약점과 대처법
 ### 5) 프로젝트를 진행하면서 코드 개선의 경험
+
+
+
+# 출처
+## 1.언어
+* http://www.nextree.co.kr/p6960/
