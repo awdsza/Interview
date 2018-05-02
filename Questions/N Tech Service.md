@@ -100,6 +100,9 @@
     ```
     
 ### 2) Spring MVC 처리 과정
+
+그림으로 설명해야 하기때문에 위에 [링크](http://asfirstalways.tistory.com/180)로 대체한다.
+
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
 ## 4.DB
 ### 1) MyBatis의 defaultexecutortype에 대해 설명
