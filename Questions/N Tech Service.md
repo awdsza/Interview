@@ -116,7 +116,8 @@
 - Bean Scope 종류
 
 기본적으로 SingleTon으로 관리를 하지만 요구사항이나 구현 기능에 따라, 비싱글턴일 때도 있다. 
-  * singleton : 기본적인 스코프
+  
+  * singleton : 기본적인 스코프
   * prototype : 어플리케이션에서 요청시 (getBean()) 마다 스프링이 새 인스턴스를 생성
   * request : HTTP 요청별로 인스턴스화 되며 요청이 끝나면 소멸 (spring mvc webapplication 용도)
   * session : HTTP 세션별로 인스턴스화되며 세션이 끝나며 소멸 (spring mvc webapplication 용도)
