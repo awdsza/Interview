@@ -5,7 +5,7 @@
 ### 1) 객체 지향의 Solid란?
 * SRP(단일책임의 원칙 : Single Responsibility Principle)
 
-     작성된 클래스는 하나의 기능만 가지며 서비스는 하나의 책임을 수행하는데 집중되어야 한다는 원칙이다.
+클래스는 하나의 기능만 가지며 서비스는 하나의 책임을 수행하는데 집중되어야 한다.
 
 * OCP (개방폐쇄의 원칙: Open Close Principle)
 
@@ -15,11 +15,16 @@
 * LSP (리스코브 치환의 원칙: The Liskov Substitution Principle)
 
 서브 타입은 언제나 기반 타입과 호환될 수 있어야 한다.
- 즉 부모 클래스가 들어갈 자리에 자식 클래스를 넣어도 계획대로 잘 작동해야 한다는 것. 상속의 본질
+즉 부모 클래스가 들어갈 자리에 자식 클래스를 넣어도 계획대로 잘 작동해야 한다는 것.
+클래스 업캐스팅을 해도 문제가 없다는 의미.(일반화를 해도 어색함이 없어야한다??)
 
 * ISP (인터페이스 분리의 원칙: Interface Segregation Principle)
+
 어떤 클래스가 다른 클래스에 종속될 때에는 가능한 최소한의 인터페이스만을 사용
-* DIP (의존성역전의 원칙: Dependency Inversion Principle)
+* DIP (의존성역전의 원칙: Dependency Inversion Principle
+
+상위클래스는 하위클래스에 의존해서는 안된다
+
 ### 2) 본인이 사용했던 디자인 패턴은?
 ## 2.Java
 ### 1) Java7과 8의 차이점은?
@@ -59,3 +64,4 @@
 * http://www.nextree.co.kr/p6960/
 * https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Development_common_sense
 * https://namu.wiki/w/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9B%90%EC%B9%99
+* https://wkdtjsgur100.github.io/solid-principle/
