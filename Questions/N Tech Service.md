@@ -43,6 +43,8 @@
  
  - Stream API
   
+ - Default Method for Interface
+ 기존 자바 인터페이스는 상수와 추상화된 함수만 허용했다면, 8부터는 default 키워드를 통해 기능을 가진 method를 만들 수 있다.
 ### 2) JVM에는 어떤메모리가 들어가있으며, 어떠한 정보가 있는지?
 ## 3.Spring
 ### 1) Spring에서 예외처리방법
@@ -82,6 +84,7 @@
 * [객체지향 디자인의 5원칙(SOLID 원칙)](https://wkdtjsgur100.github.io/solid-principle/)
 ## 2.JAVA
 ### 1) Java7과 8의 차이점은?
+* [자바 8 튜토리얼](https://medium.com/@pyeonjy97/%EC%9E%90%EB%B0%94-8-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-5d05f0f55fe1)
 * [자바 7 와 자바 8 에 대하여](https://johanneslee.github.io/articles/page7/)
 * [자바 람다식(Lambda Expressions in Java)](http://jdm.kr/blog/181)
 * [스트림API](http://iloveulhj.github.io/posts/java/java-stream-api.html)
