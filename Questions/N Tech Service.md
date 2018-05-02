@@ -149,20 +149,19 @@
 # 출처
 ## 1.언어
 ### 1) 객체 지향의 Solid란?
-* [객체지향 개발 5대 원리: SOLID](http://www.nextree.co.kr/p6960/)
-* [Object Oriented Programming](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Development_common_sense#object-oriented-programming)
-* [객체 지향 프로그래밍/원칙](https://namu.wiki/w/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9B%90%EC%B9%99)
-* [객체지향 디자인의 5원칙(SOLID 원칙)](https://wkdtjsgur100.github.io/solid-principle/)
+* [Nextree(객체지향 개발 5대 원리: SOLID)](http://www.nextree.co.kr/p6960/)
+* [JaeYeopHan님의 github(Object Oriented Programming)](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Development_common_sense#object-oriented-programming)
+* [나무위키(객체 지향 프로그래밍/원칙)](https://namu.wiki/w/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9B%90%EC%B9%99)
+* [Jang님의 github(객체지향 디자인의 5원칙(SOLID 원칙))](https://wkdtjsgur100.github.io/solid-principle/)
 ## 2.JAVA
 ### 1) Java7과 8의 차이점은?
-* [자바 8 튜토리얼](https://medium.com/@pyeonjy97/%EC%9E%90%EB%B0%94-8-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-5d05f0f55fe1)
-* [자바 7 와 자바 8 에 대하여](https://johanneslee.github.io/articles/page7/)
-* [자바 람다식(Lambda Expressions in Java)](http://jdm.kr/blog/181)
-* [스트림API](http://iloveulhj.github.io/posts/java/java-stream-api.html)
-* [[JAVA] 스트림 API](http://iloveulhj.github.io/posts/java/java-stream-api.html)
+* [PyunJY님 블로그(자바 8 튜토리얼)](https://medium.com/@pyeonjy97/%EC%9E%90%EB%B0%94-8-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-5d05f0f55fe1)
+* [Juno Lee님의 github(자바 7 와 자바 8 에 대하여)](https://johanneslee.github.io/articles/page7/)
+* [JDM's Blog(자바 람다식(Lambda Expressions in Java))](http://jdm.kr/blog/181)
+* [iloveulhj님의 github(스트림API)](http://iloveulhj.github.io/posts/java/java-stream-api.html)
 ## 3.Spring
 ### 1) Spring에서 예외처리방법
- * [[Spring] 예외 처리](https://shj7242.github.io/2017/12/27/Spring33/)
- * [스프링컨트롤러예외처리,@ExceptionHandler, @ControllerAdvice](https://www.slideshare.net/topcredu/exceptionhandler-controlleradvice)
+ * [신희준 블로그([Spring] 예외 처리)](https://shj7242.github.io/2017/12/27/Spring33/)
+ * [탑크리에듀(스프링컨트롤러예외처리,@ExceptionHandler, @ControllerAdvice)](https://www.slideshare.net/topcredu/exceptionhandler-controlleradvice)
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
- * [Toward the Developer](http://joont.tistory.com/144)
+ * [Toward the Developer(싱글톤과 스프링)](http://joont.tistory.com/144)
