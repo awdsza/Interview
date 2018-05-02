@@ -61,11 +61,12 @@
   }
   ```
   
-  - ControllerAdvice 사용
-    
-    스프링 3.2이상에서 처리 가능. Controller에서 발생하는 예외 등을 catch하는 기능을 가지고있다.
-    
-    ```
+- ControllerAdvice 사용
+  
+  
+  스프링 3.2이상에서 처리 가능. Controller에서 발생하는 예외 등을 catch하는 기능을 가지고있다.
+
+  ```
     @ControllerAdvice //모든 컨트롤러에 대응된다.
     public class ExceptionControllerAdvice { 
       @ExceptionHandler(Exception.class) //모든 예외를 받음 
@@ -75,13 +76,13 @@
         mav.addObject("message", e.getMessage()); return mav; 
       } 
     }
-    ```
+  ```
+  
+- 에러페이지 처리
     
-  - 에러페이지 처리
-    
-    web.xml 에 특정 코드의 에러상황에 따라 반환해주는 jsp 페이지를 설정해줄 수 있다.
-    
-    ```
+  web.xml 에 특정 코드의 에러상황에 따라 반환해주는 jsp 페이지를 설정해줄 수 있다.
+  
+  ```
     <error-page>
     <error-code>404</error-code>
     <location>/WEB-INF/views/error/404error.jsp</location>
