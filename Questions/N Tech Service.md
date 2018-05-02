@@ -40,6 +40,9 @@
   () -> { expression body }
   () -> expression body
   ```
+ 
+ - Stream API
+  
 ### 2) JVM에는 어떤메모리가 들어가있으며, 어떠한 정보가 있는지?
 ## 3.Spring
 ### 1) Spring에서 예외처리방법
