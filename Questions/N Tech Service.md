@@ -147,3 +147,5 @@
 ### 1) Spring에서 예외처리방법
  * [[Spring] 예외 처리](https://shj7242.github.io/2017/12/27/Spring33/)
  * [스프링컨트롤러예외처리,@ExceptionHandler, @ControllerAdvice](https://www.slideshare.net/topcredu/exceptionhandler-controlleradvice)
+### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
+ * [싱글톤과 스프링](http://joont.tistory.com/144)
