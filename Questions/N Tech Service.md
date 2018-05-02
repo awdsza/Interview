@@ -76,12 +76,12 @@
 # 출처
 ## 1.언어
 ### 1) 객체 지향의 Solid란?
-* http://www.nextree.co.kr/p6960/
-* https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Development_common_sense
-* https://namu.wiki/w/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9B%90%EC%B9%99
-* https://wkdtjsgur100.github.io/solid-principle/
+* [객체지향 개발 5대 원리: SOLID](http://www.nextree.co.kr/p6960/)
+* [Object Oriented Programming](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Development_common_sense#object-oriented-programming)
+* [객체 지향 프로그래밍/원칙](https://namu.wiki/w/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9B%90%EC%B9%99)
+* [객체지향 디자인의 5원칙(SOLID 원칙)](https://wkdtjsgur100.github.io/solid-principle/)
 ## 2.JAVA
 ### 1) Java7과 8의 차이점은?
-* http://jdm.kr/blog/181
-* [람다식](https://johanneslee.github.io/articles/page7/)
+* [자바 7 와 자바 8 에 대하여](https://johanneslee.github.io/articles/page7/)
+* [자바 람다식(Lambda Expressions in Java)](http://jdm.kr/blog/181)
 * [스트림API](http://iloveulhj.github.io/posts/java/java-stream-api.html)
