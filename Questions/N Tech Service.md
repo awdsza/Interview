@@ -101,9 +101,26 @@
     
 ### 2) Spring MVC 처리 과정
 
-그림으로 설명해야 하기때문에 위에 [링크](http://asfirstalways.tistory.com/180)로 대체한다.
+[링크](http://asfirstalways.tistory.com/180)로 대체한다.
 
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
+  맞다. 
+  
+  ```
+  ApplicationContext context =
+        new GenericXmlApplicationContext("applicationContext.xml");
+	CarDAO carDao1 = context.getBean("carDAO",CarDAO.class);
+	CarDAO carDao2 = context.getBean("carDAO",CarDAO.class);
+
+	System.out.println(carDao1);
+	System.out.println(carDao2);
+	System.out.println(carDao1==carDao2);
+
+
+	출처: http://joont.tistory.com/144 [Toward the Developer]
+
+	출처: http://joont.tistory.com/144 [Toward the Developer]
+  ```
 ## 4.DB
 ### 1) MyBatis의 defaultexecutortype에 대해 설명
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
@@ -148,4 +165,4 @@
  * [[Spring] 예외 처리](https://shj7242.github.io/2017/12/27/Spring33/)
  * [스프링컨트롤러예외처리,@ExceptionHandler, @ControllerAdvice](https://www.slideshare.net/topcredu/exceptionhandler-controlleradvice)
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
- * [싱글톤과 스프링](http://joont.tistory.com/144)
+ * [Toward the Developer](http://joont.tistory.com/144)
