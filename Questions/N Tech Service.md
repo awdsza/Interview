@@ -99,18 +99,31 @@
 [링크](http://asfirstalways.tistory.com/180)로 대체한다.
 
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
-  - 빈을 가져올때마다 오브젝트를 새로 생성하지 않는다.
-	```
-	ApplicationContext context =
-		new GenericXmlApplicationContext("applicationContext.xml");
-		CarDAO carDao1 = context.getBean("carDAO",CarDAO.class);
-		CarDAO carDao2 = context.getBean("carDAO",CarDAO.class);
 
-		System.out.println(carDao1);
-		System.out.println(carDao2);
-		System.out.println(carDao1==carDao2);
-	```
-  - 
+- 빈을 가져올때마다 오브젝트를 새로 생성하지 않는다.
+	
+  ```
+    ApplicationContext context =
+	new GenericXmlApplicationContext("applicationContext.xml");
+	CarDAO carDao1 = context.getBean("carDAO",CarDAO.class);
+	CarDAO carDao2 = context.getBean("carDAO",CarDAO.class);
+
+	System.out.println(carDao1);
+	System.out.println(carDao2);
+	System.out.println(carDao1==carDao2);
+  ```
+
+- Bean Scope 종류
+
+기본적으로 SingleTon으로 관리를 하지만 요구사항이나 구현 기능에 따라, 비싱글턴일 때도 있다. 
+  * singleton : 기본적인 스코프
+  * prototype : 어플리케이션에서 요청시 (getBean()) 마다 스프링이 새 인스턴스를 생성
+  * request : HTTP 요청별로 인스턴스화 되며 요청이 끝나면 소멸 (spring mvc webapplication 용도)
+  * session : HTTP 세션별로 인스턴스화되며 세션이 끝나며 소멸 (spring mvc webapplication 용도)
+  * global session : 포틀릿 기반의 웹 어플리케이션 용도. 전역 세션 스코프의 빈은 같은 스프링 MVC를 사용한 포탈 어플리케이션 내의 모든 포틀릿 사이에서 공유할 수 있다
+  * thred : 새 스레드에서 요청하면 새로운 bean 인스턴스를 생성, 같은 스레드에 대해서는 항상 같은 bean 인스턴스가 반환
+  * custom : org.pringframework.beans.factory.config.Scope를 구현하고 커스텀 스코프를 스프링의 설정에 등록하여 사용
+  
 ## 4.DB
 ### 1) MyBatis의 defaultexecutortype에 대해 설명
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
@@ -155,3 +168,4 @@
  * [탑크리에듀(스프링컨트롤러예외처리,@ExceptionHandler, @ControllerAdvice)](https://www.slideshare.net/topcredu/exceptionhandler-controlleradvice)
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
  * [Toward the Developer(싱글톤과 스프링)](http://joont.tistory.com/144)
+ * [전산쟁이 블로그(Spring Bean Scope 정리)](http://javaslave.tistory.com/45)
