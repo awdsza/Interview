@@ -56,9 +56,9 @@
   스프링 컨트롤러에서 정의한 메소드에서 기술한 예외가 발생되면 자동으로 받아낼 수 있는데 이를 이용하여 컨트롤러에서 발생하는 예외를 View단 JSP등으로 보내서 처리할 수 있다.
 
   ```
-  @ExceptionHandler(Exception.class)
+	@ExceptionHandler(Exception.class)
 	public ModelAndView handleException(HttpServletRequest req,	HttpServletResponse response, Exception ex) {
-  }
+	}
   ```
   
 - ControllerAdvice 사용
@@ -87,12 +87,7 @@
     <error-code>404</error-code>
     <location>/WEB-INF/views/error/404error.jsp</location>
     </error-page>
-
-    <error-page>
-    <error-code>500</error-code>
-    <location>/WEB-INF/views/error/500error.jsp</location>
-    </error-page>
-
+    
     <error-page>
     <exception-type>java.lang.Throwable</exception-type>
     <location>/WEB-INF/views/error/error.jsp</location>
@@ -104,23 +99,18 @@
 [링크](http://asfirstalways.tistory.com/180)로 대체한다.
 
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
-  맞다. 
-  
-  ```
-  ApplicationContext context =
-        new GenericXmlApplicationContext("applicationContext.xml");
-	CarDAO carDao1 = context.getBean("carDAO",CarDAO.class);
-	CarDAO carDao2 = context.getBean("carDAO",CarDAO.class);
+  - 빈을 가져올때마다 오브젝트를 새로 생성하지 않는다.
+	```
+	ApplicationContext context =
+		new GenericXmlApplicationContext("applicationContext.xml");
+		CarDAO carDao1 = context.getBean("carDAO",CarDAO.class);
+		CarDAO carDao2 = context.getBean("carDAO",CarDAO.class);
 
-	System.out.println(carDao1);
-	System.out.println(carDao2);
-	System.out.println(carDao1==carDao2);
-
-
-	출처: http://joont.tistory.com/144 [Toward the Developer]
-
-	출처: http://joont.tistory.com/144 [Toward the Developer]
-  ```
+		System.out.println(carDao1);
+		System.out.println(carDao2);
+		System.out.println(carDao1==carDao2);
+	```
+  - 
 ## 4.DB
 ### 1) MyBatis의 defaultexecutortype에 대해 설명
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
