@@ -44,7 +44,9 @@
  - Stream API
   
  - Default Method for Interface
- 기존 자바 인터페이스는 상수와 추상화된 함수만 허용했다면, 8부터는 default 키워드를 통해 기능을 가진 method를 만들 수 있다.
+
+기존 자바 인터페이스는 상수와 추상화된 함수만 허용했다면, 8부터는 default 키워드를 통해 기능을 가진 method를 만들 수 있다.
+
 ### 2) JVM에는 어떤메모리가 들어가있으며, 어떠한 정보가 있는지?
 ## 3.Spring
 ### 1) Spring에서 예외처리방법
