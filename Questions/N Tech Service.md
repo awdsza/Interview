@@ -30,6 +30,16 @@
 ### 2) 본인이 사용했던 디자인 패턴은?
 ## 2.Java
 ### 1) Java7과 8의 차이점은?
+
+- 람다식
+
+  식별자 없이 실행 가능한 함수 표현식
+  ```
+  ( parameters ) -> expression body
+  ( parameters ) -> { expression body }
+  () -> { expression body }
+  () -> expression body
+  ```
 ### 2) JVM에는 어떤메모리가 들어가있으며, 어떠한 정보가 있는지?
 ## 3.Spring
 ### 1) Spring에서 예외처리방법
@@ -67,3 +77,6 @@
 * https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Development_common_sense
 * https://namu.wiki/w/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9B%90%EC%B9%99
 * https://wkdtjsgur100.github.io/solid-principle/
+## 2.JAVA
+### 1) Java7과 8의 차이점은?
+* http://jdm.kr/blog/181
