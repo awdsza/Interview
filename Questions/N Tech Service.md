@@ -127,6 +127,13 @@
   
 ## 4.DB
 ### 1) MyBatis의 defaultexecutortype에 대해 설명
+
+디폴트 실행자를 설정.
+
+  * SIMPLE
+  * REUSE : PreparedStatement를 재사용
+  * BATCH : 구문을 재사용하고 수정을 배치처리
+  
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
 ### 3) PreparedStatement 와 Statement의 차이점
 ### 4) innerJoin 과 OuterJoin 설명
@@ -170,3 +177,6 @@
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
  * [Toward the Developer(싱글톤과 스프링)](http://joont.tistory.com/144)
  * [전산쟁이 블로그(Spring Bean Scope 정리)](http://javaslave.tistory.com/45)
+## 4.DB
+### 1) MyBatis의 defaultexecutortype에 대해 설명
+ * [MyBatis 홈페이지](http://www.mybatis.org/mybatis-3/ko/configuration.html)
