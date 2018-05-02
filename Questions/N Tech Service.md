@@ -50,6 +50,54 @@
 ### 2) JVM에는 어떤메모리가 들어가있으며, 어떠한 정보가 있는지?
 ## 3.Spring
 ### 1) Spring에서 예외처리방법
+
+- ExceptionHandler 사용.
+  
+  스프링 컨트롤러에서 정의한 메소드에서 기술한 예외가 발생되면 자동으로 받아낼 수 있는데 이를 이용하여 컨트롤러에서 발생하는 예외를 View단 JSP등으로 보내서 처리할 수 있다.
+
+  ```
+  @ExceptionHandler(Exception.class)
+	public ModelAndView handleException(HttpServletRequest req,	HttpServletResponse response, Exception ex) {
+  }
+  ```
+  
+  - ControllerAdvice 사용
+    
+    스프링 3.2이상에서 처리 가능. Controller에서 발생하는 예외 등을 catch하는 기능을 가지고있다.
+    
+    ```
+    @ControllerAdvice //모든 컨트롤러에 대응된다.
+    public class ExceptionControllerAdvice { 
+      @ExceptionHandler(Exception.class) //모든 예외를 받음 
+      public ModelAndView exception(Exception e) { 
+        ModelAndView mav = new ModelAndView("exception"); 
+        mav.addObject("name", e.getClass().getSimpleName()); 
+        mav.addObject("message", e.getMessage()); return mav; 
+      } 
+    }
+    ```
+    
+  - 에러페이지 처리
+    
+    web.xml 에 특정 코드의 에러상황에 따라 반환해주는 jsp 페이지를 설정해줄 수 있다.
+    
+    ```
+    <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/views/error/404error.jsp</location>
+    </error-page>
+
+    <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/views/error/500error.jsp</location>
+    </error-page>
+
+    <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/WEB-INF/views/error/error.jsp</location>
+    </error-page>
+    ```
+    
 ### 2) Spring MVC 처리 과정
 ### 3) Spring에서 Bean은 Singleton패턴이 맞는가? 그리고 Bean Scope의 종류는?
 ## 4.DB
@@ -91,3 +139,7 @@
 * [자바 람다식(Lambda Expressions in Java)](http://jdm.kr/blog/181)
 * [스트림API](http://iloveulhj.github.io/posts/java/java-stream-api.html)
 * [[JAVA] 스트림 API](http://iloveulhj.github.io/posts/java/java-stream-api.html)
+## 3.Spring
+### 1) Spring에서 예외처리방법
+ * [[Spring] 예외 처리](https://shj7242.github.io/2017/12/27/Spring33/)
+ * [스프링컨트롤러예외처리,@ExceptionHandler, @ControllerAdvice](https://www.slideshare.net/topcredu/exceptionhandler-controlleradvice)
