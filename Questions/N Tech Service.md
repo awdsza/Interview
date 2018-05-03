@@ -130,8 +130,10 @@
 
 디폴트 실행자를 설정.
 
-  * SIMPLE
-  * REUSE : PreparedStatement를 재사용
+  * SIMPLE : default 설정
+  
+  * REUSE : PreparedStatement를 재사용
+  
   * BATCH : 구문을 재사용하고 수정을 배치처리
   
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
@@ -180,3 +182,5 @@
 ## 4.DB
 ### 1) MyBatis의 defaultexecutortype에 대해 설명
  * [MyBatis 홈페이지](http://www.mybatis.org/mybatis-3/ko/configuration.html)
+### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
+ * [DBA 커뮤니티 구루비](http://wiki.gurubee.net/pages/viewpage.action?pageId=4949506)
