@@ -138,6 +138,43 @@
   
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
 ### 3) PreparedStatement 와 Statement의 차이점
+
+가장 큰차이점은 캐시의 사용여부다</br>
+Statement 순서</br>
+  (1) 쿼리 문장분석</br>
+  (2) 컴파일</br>
+  (3) 실행</br>
+Statement를 사용하면 매번 쿼리를 실행할떄마다 1~3단계를 거치지만, PreparedStatement는 처음 한번만 3단계를 거친후 캐시에 담아 재사용을 한다.
+같은 DB를 수행시 PreparedStatement가 DB에 적은 부하를 주며 성능도 좋다.
+
+- Statement
+
+  ```
+    String sqlstr = "SELECT name, memo FROM TABLE WHERE num = " + num 
+    Statement stmt = conn.credateStatement(); 
+    ResultSet rst = stmt.executeQuerey(sqlstr); 
+  ```
+ 
+ Dynamic SQL을 사용하면 매번 조건절이 달라진다. 캐싱의 장점을 잃어버리기 때문에 Statement가 적절하다.
+ 
+- PreparedStatement
+
+  ```
+    String sqlstr = "SELECT name, memo FROM TABLE WHERE num = ? " 
+    PreparedStatement stmt = conn.prepareStatement(sqlstr); 
+    pstmt.setInt(1, num);
+    ResultSet rst = pstmt.executeQuerey();
+  ```
+  사용자 입력값으로 쿼리를 생성하거나, 반복적인 쿼리를 수행할때 좋다.
+  
+  ```
+    pstmt = conn.preapreStatement("INSERT INTO TEST_TABLE VALUES(?)");
+    for (int i = 0; i < 10000; i++) {
+    	pstmt.setString(1, content+i);
+   	pstmt.executeUpdate();
+    }
+
+  ```
 ### 4) innerJoin 과 OuterJoin 설명
 ## 5.Web
 ### 1) Javascript의 특징과 장점 설명
@@ -183,4 +220,5 @@
 ### 1) MyBatis의 defaultexecutortype에 대해 설명
  * [MyBatis 홈페이지](http://www.mybatis.org/mybatis-3/ko/configuration.html)
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
- * [DBA 커뮤니티 구루비](http://wiki.gurubee.net/pages/viewpage.action?pageId=4949506)
+### 3) PreparedStatement 와 Statement의 차이점
+ * [장인개발자를 꿈꾸는 :: 기록하는 공간](http://devbox.tistory.com/entry/Comporison)
