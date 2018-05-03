@@ -253,7 +253,10 @@ KeepAliveTimeout값이 채워지기 전에 다시 요청이 온다면 다시 Kee
 최종적으로, KeepAliveTimeout 지정한 시간만큼 idle하면 그때, 해당 Port연결을 끊는다.
 ### 2) Tomcat, Apache, Nginx 설명
 - Tomcat
-Java 기반의 웹 애플리케이션 서버(WAS)이다. 서블릿 / JSP 엔진만 들어가 있다. 
+Java 기반의 웹 애플리케이션 서버(WAS)이다. 서블릿 / JSP 엔진이 들어가 있다. 주로 DB를 주고 받거나 프로그램으로 데이터 조작이 필요할 떄 많이 사용한다. 정적인 데이터 처리에 단점이 있기 때문에, Apache와 같이 사용한다.
+- Apache
+http요청을 처리하는 웹서버를 말한다. 클라이언트가 GET, POST, DELETE메소드를 이용해 요청을 하면 아파치가 결과를 돌려주는 기능을 한다. 주로 정적인 데이터를 처리한다.
+- Nginx
 ### 3) get방식에서 한글 값을 넘겼는데 한글이 깨져서 나오면 어떻게 조치해야하는가?
 ### 4) 한 서버에서 도베인을 여러개 서비스를 하고싶다면 어떻게 할 것인가?
 ## 7.개발론
@@ -304,3 +307,6 @@ Java 기반의 웹 애플리케이션 서버(WAS)이다. 서블릿 / JSP 엔진�
  * [MC뺴인트와 함께([Apache] KeepAlive 설정)(http://mcpaint.tistory.com/141)
 ### 2) Tomcat, Apache, Nginx 설명
  * [나무위키(톰켓)](https://namu.wiki/w/%ED%86%B0%EC%BA%A3)
+ * [위키백과(아파치 톰켓)](https://ko.wikipedia.org/wiki/%EC%95%84%ED%8C%8C%EC%B9%98_%ED%86%B0%EC%BA%A3)
+ * [BLOG FOR ME(WAS와 웹서버의 차이 – 톰캣과 아파치를 구별하지 못하는 사람을 위해)](http://sungbine.github.io/tech/post/2015/02/15/tomcat%EA%B3%BC%20apache%EC%9D%98%20%EC%97%B0%EB%8F%99.html)
+ * [큰돌의 터전([개발자 면접준비]#2. nginx란](https://m.blog.naver.com/jhc9639/220967352282)
