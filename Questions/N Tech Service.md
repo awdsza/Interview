@@ -147,34 +147,32 @@ Statement 순서</br>
 Statement를 사용하면 매번 쿼리를 실행할떄마다 1~3단계를 거치지만, PreparedStatement는 처음 한번만 3단계를 거친후 캐시에 담아 재사용을 한다.
 같은 DB를 수행시 PreparedStatement가 DB에 적은 부하를 주며 성능도 좋다.
 
-- Statement
-
+- Statement</br>
+  Dynamic SQL을 사용하면 매번 조건절이 달라진다. 캐싱의 장점을 잃어버리기 때문에 Statement가 적절하다.
   ```
     String sqlstr = "SELECT name, memo FROM TABLE WHERE num = " + num 
     Statement stmt = conn.credateStatement(); 
     ResultSet rst = stmt.executeQuerey(sqlstr); 
   ```
  
- Dynamic SQL을 사용하면 매번 조건절이 달라진다. 캐싱의 장점을 잃어버리기 때문에 Statement가 적절하다.
+- PreparedStatement</br>
+  사용자 입력값으로 쿼리를 생성하여 수행할때 좋다.
+  대표적인 예로 아래와 같이 쿼리를 미리 정의해 놓고 실행때만 값을 바꾸면서 실행하는 방법이 있다.
  
-- PreparedStatement
-
-  ```
+ ```
     String sqlstr = "SELECT name, memo FROM TABLE WHERE num = ? " 
     PreparedStatement stmt = conn.prepareStatement(sqlstr); 
     pstmt.setInt(1, num);
     ResultSet rst = pstmt.executeQuerey();
-  ```
-  사용자 입력값으로 쿼리를 생성하거나, 반복적인 쿼리를 수행할때 좋다.
-  
-  ```
+ ```
+ ```
     pstmt = conn.preapreStatement("INSERT INTO TEST_TABLE VALUES(?)");
     for (int i = 0; i < 10000; i++) {
     	pstmt.setString(1, content+i);
    	pstmt.executeUpdate();
     }
 
-  ```
+ ```
 ### 4) innerJoin 과 OuterJoin 설명
 ## 5.Web
 ### 1) Javascript의 특징과 장점 설명
@@ -222,3 +220,4 @@ Statement를 사용하면 매번 쿼리를 실행할떄마다 1~3단계를 거�
 ### 2) index스캔과 full scan을 설명. 옵티마이저된 인덱스가 풀스캔을 하는 경우는?
 ### 3) PreparedStatement 와 Statement의 차이점
  * [장인개발자를 꿈꾸는 :: 기록하는 공간](http://devbox.tistory.com/entry/Comporison)
+ * [Head First Thinking](https://inthej.com/2017/09/27/statement%EC%99%80-preparedstatement-%EC%9D%98-%EC%B0%A8%EC%9D%B4/)
