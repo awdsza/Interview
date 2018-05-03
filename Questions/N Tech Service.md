@@ -221,6 +221,24 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
  (1) html 파일내에서 작성이 가능해 개발 속도가 빠르다.</br>
  (2) 웹 브라우저에서 동작하는 언어라 운영체제의 제한을 받지 않는다.</br>
 ### 2) jQuery 비동기 특징
+아래의 코드에서 async를 true라면 telNo변수 값은 빈값으로 된다. ajax와 아래 코드가 순차적으로 처리되지않는다. 즉, 비동기 방식으로 데이터를 처리한다. async를 false로 하면 ajax가 끝난 이후에  아래 코드가 순차적으로 실행되므로, telNo값이 변경이 된다.
+```
+  	// 전화번호를 검색하여 받아온다.
+  	var telNo = '';
+	$.ajax({
+		url     : '',
+		data    : {},
+		type    : 'post',
+		sendDataType : 'json',
+		success : function(data) {
+			telNo = data;
+		}
+	});
+
+	// 전화번호를 넣어준다.
+	$('#telNo').val(telNo);
+```
+
 ### 3) jQuery에서 #과 . 구분자의 특징
 - #은 Element ID를 의미.
 - .은 Element의 Class를 의미.
@@ -273,3 +291,7 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
  * [DoDat 자바스크립트(Java Script)특징과 활용범위](http://jayzzz.tistory.com/54)
  * [JOY&YOUNG(자바스크립트의 기초 및 특징)](http://blog.jiyoung5.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%B0%8F-%ED%8A%B9%EC%A7%95)
  * [Code Dragon(자바스크립트의 특징)](http://codedragon.tistory.com/3443)
+### 2) jQuery 비동기 특징
+ * [Why(JQuery Ajax 동기 비동기)](http://www.springcome.net/?p=55)
+ ## 6.서버
+### 1) 아파치 Keep-alive의 설정 설명
