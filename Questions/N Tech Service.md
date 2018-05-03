@@ -205,6 +205,11 @@ Statement를 사용하면 매번 쿼리를 실행할떄마다 1~3단계를 거�
   ```
   INNER JOIN은 테이블 2개가 매칭되는 키값을 보여줄때 쓴다.
   
+- Outer Join
+
+Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든 결과값을 가져오며, Right는 오른쪽의 테이블 모든 결과값을 가져온다. Full은 양쪽테이블 모든 결과를 가져온다. 매칭된 결과가 없다면 Null 값을 가져온다.
+  
+- 이해가 되지 않는다면 [집합 이미지](https://www.quora.com/What-is-the-difference-between-various-types-of-joins-For-instance-there%E2%80%99s-inner-join-left-join-right-join-full-join-cross-join-natural-join-equi-join-and-semi-join) 형태로 설명이 잘되어있는 링크를 보시면 될꺼 같습니다.
 ## 5.Web
 ### 1) Javascript의 특징과 장점 설명
 ### 2) jQuery 비동기 특징
