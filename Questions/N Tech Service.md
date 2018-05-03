@@ -305,7 +305,7 @@ http요청을 처리하는 웹서버를 말한다. 클라이언트가 GET, POST,
  * [Why(JQuery Ajax 동기 비동기)](http://www.springcome.net/?p=55)
  ## 6.서버
 ### 1) 아파치 Keep-alive의 설정 설명
- * [MC뺴인트와 함께([Apache] KeepAlive 설정)(http://mcpaint.tistory.com/141)
+ * [MC뺴인트와 함께([Apache] KeepAlive 설정)](http://mcpaint.tistory.com/141)
 ### 2) Tomcat, Apache, Nginx 설명
  * [나무위키(톰켓)](https://namu.wiki/w/%ED%86%B0%EC%BA%A3)
  * [위키백과(아파치 톰켓)](https://ko.wikipedia.org/wiki/%EC%95%84%ED%8C%8C%EC%B9%98_%ED%86%B0%EC%BA%A3)
