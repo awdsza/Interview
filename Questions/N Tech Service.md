@@ -214,7 +214,11 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
 ### 1) Javascript의 특징과 장점 설명
 ### 2) jQuery 비동기 특징
 ### 3) jQuery에서 #과 . 구분자의 특징
+- #은 Element ID를 의미.
+- .은 Element의 Class를 의미.
+
 ### 4) javaScript에서 getElementById에 준하는 jQuery 문법은?
+- $("#ID")
 ### 5) Ajax get 방식으로 url을 조회하여 DB를 Update를했는데, DB는 변경되었지만 화면은 안바꼈다면 어떻게 해야 할 것인가
 ## 6.서버
 ### 1) 아파치 Keep-alive의 설정 설명
@@ -257,3 +261,6 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
 ### 3) PreparedStatement 와 Statement의 차이점
  * [장인개발자를 꿈꾸는 :: 기록하는 공간](http://devbox.tistory.com/entry/Comporison)
  * [Head First Thinking](https://inthej.com/2017/09/27/statement%EC%99%80-preparedstatement-%EC%9D%98-%EC%B0%A8%EC%9D%B4/)
+ ## 5.Web
+### 1) Javascript의 특징과 장점 설명
+ 
