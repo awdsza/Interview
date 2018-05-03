@@ -174,35 +174,36 @@ Statement를 사용하면 매번 쿼리를 실행할떄마다 1~3단계를 거�
 
  ```
 ### 4) innerJoin 과 OuterJoin 설명
+
 - InnerJoin
-  
-  ```
-    CREATE TABLE BOARD 
-   (	
-    BOARD_ID VARCHAR2(8 BYTE) NOT NULL, 
-	BOARD_TITLE VARCHAR2(100 BYTE), 
-	BOARD_CONTENTS VARCHAR2(1000 BYTE)
-   );
-   CREATE TABLE REPLY
-   (
-     REPLY_ID VARCHAR2(8 BYTE) NOT NULL, 
-	 BOARD_ID VARCHAR2(8 BYTE) NOT NULL, 
-	 REPLY_CONTENTS  VARCHAR2(1000 BYTE)
-   );
-  ```
+ 
+   ```
+      CREATE TABLE BOARD 
+     (	
+   	 BOARD_ID VARCHAR2(8 BYTE) NOT NULL, 
+	  BOARD_TITLE VARCHAR2(100 BYTE), 
+	  BOARD_CONTENTS VARCHAR2(1000 BYTE)
+      );
+     CREATE TABLE REPLY
+     (
+       REPLY_ID VARCHAR2(8 BYTE) NOT NULL, 
+       BOARD_ID VARCHAR2(8 BYTE) NOT NULL, 
+       REPLY_CONTENTS  VARCHAR2(1000 BYTE)
+     );
+    ```
   
   위에 게시판 테이블과 댓글 테이블을 만들었다. BOARD테이블의 BOARD_ID는 PK이며,  REPLY테이블의 BOARD_ID는 BOARD테이블의 FK이다.
   여기서 선택한 게시판의 내용과 댓글들을 보고 싶다면 쿼리는 이렇게 나올 것이다.
   
-  ```
-     SELECT 
-	BOARD_ID,
-	BOARD_TITLE,
-	BOARD_CONTENTS,
-	REPLY_ID,
-	REPLY_CONTENTS
-	FROM BOARD A INNER JOIN REPLY B ON A.BOARD_ID = B.BOARD_ID
-  ```
+    ```
+       SELECT 
+	  BOARD_ID,
+	  BOARD_TITLE,
+	  BOARD_CONTENTS,
+	  REPLY_ID,
+	  REPLY_CONTENTS
+	  FROM BOARD A INNER JOIN REPLY B ON A.BOARD_ID = B.BOARD_ID
+    ```
   INNER JOIN은 테이블 2개가 매칭되는 키값을 보여줄때 쓴다.
   
 ## 5.Web
