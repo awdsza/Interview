@@ -247,7 +247,13 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
 ### 5) Ajax get 방식으로 url을 조회하여 DB를 Update를했는데, DB는 변경되었지만 화면은 안바꼈다면 어떻게 해야 할 것인가
 ## 6.서버
 ### 1) 아파치 Keep-alive의 설정 설명
-### 2) Tomcat, Apache, Nginx를 설명
+특정 한 프로세스가 특정 사용자의 지속적인 요청 작업들을 계속해서 처리하도록 함.
+즉, 첫 요청 시에 열어 놓은 Port를 끊지 않고, 지정된 KeepAliveTimeout동안 idle하면 끊는다. 
+KeepAliveTimeout값이 채워지기 전에 다시 요청이 온다면 다시 KeepAliveTimeout은 다시 0부터 Count를 수행한다.
+최종적으로, KeepAliveTimeout 지정한 시간만큼 idle하면 그때, 해당 Port연결을 끊는다.
+### 2) Tomcat, Apache, Nginx 설명
+- Tomcat
+Java 기반의 웹 애플리케이션 서버(WAS)이다. 서블릿 / JSP 엔진만 들어가 있다. 
 ### 3) get방식에서 한글 값을 넘겼는데 한글이 깨져서 나오면 어떻게 조치해야하는가?
 ### 4) 한 서버에서 도베인을 여러개 서비스를 하고싶다면 어떻게 할 것인가?
 ## 7.개발론
@@ -295,3 +301,6 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
  * [Why(JQuery Ajax 동기 비동기)](http://www.springcome.net/?p=55)
  ## 6.서버
 ### 1) 아파치 Keep-alive의 설정 설명
+ * [MC뺴인트와 함께([Apache] KeepAlive 설정)(http://mcpaint.tistory.com/141)
+### 2) Tomcat, Apache, Nginx 설명
+ * [나무위키(톰켓)](https://namu.wiki/w/%ED%86%B0%EC%BA%A3)
