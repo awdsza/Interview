@@ -211,12 +211,19 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
   
 - 이해가 되지 않는다면 [집합 이미지](https://www.quora.com/What-is-the-difference-between-various-types-of-joins-For-instance-there%E2%80%99s-inner-join-left-join-right-join-full-join-cross-join-natural-join-equi-join-and-semi-join) 형태로 설명이 잘되어있는 링크를 보시면 될꺼 같습니다.
 ## 5.Web
-### 1) Javascript의 특징과 장점 설명
+### 1) Javascript의 특징과 장점 
+- 특징 </br>
+ (1) 웹페이지의 동작을 역동적으로 구현 할 수 있다.</br>
+ (2) 객체(내장객체)를 이용하여 프로그래밍하는 객체지향 언어이다.</br>
+ (3) 웹 브라우저에서 실행할 때 프로그램 코드가 해석된다.</br>
+ (4) 표준이 있지만 브라우저마다 지원하는 범위가 다른 언어이다.</br>
+- 장점</br>
+ (1) html 파일내에서 작성이 가능해 개발 속도가 빠르다.</br>
+ (2) 웹 브라우저에서 동작하는 언어라 운영체제의 제한을 받지 않는다.</br>
 ### 2) jQuery 비동기 특징
 ### 3) jQuery에서 #과 . 구분자의 특징
 - #은 Element ID를 의미.
 - .은 Element의 Class를 의미.
-
 ### 4) javaScript에서 getElementById에 준하는 jQuery 문법은?
 - $("#ID")
 ### 5) Ajax get 방식으로 url을 조회하여 DB를 Update를했는데, DB는 변경되었지만 화면은 안바꼈다면 어떻게 해야 할 것인가
@@ -263,4 +270,6 @@ Outer Join은 Left/Right/Full Join이 있다. Left는 왼쪽의 테이블 모든
  * [Head First Thinking](https://inthej.com/2017/09/27/statement%EC%99%80-preparedstatement-%EC%9D%98-%EC%B0%A8%EC%9D%B4/)
  ## 5.Web
 ### 1) Javascript의 특징과 장점 설명
- 
+ * [DoDat 자바스크립트(Java Script)특징과 활용범위](http://jayzzz.tistory.com/54)
+ * [JOY&YOUNG(자바스크립트의 기초 및 특징)](http://blog.jiyoung5.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%B0%8F-%ED%8A%B9%EC%A7%95)
+ * [Code Dragon(자바스크립트의 특징)](http://codedragon.tistory.com/3443)
