@@ -203,7 +203,7 @@ Statement를 사용하면 매번 쿼리를 실행할떄마다 1~3단계를 거�
 	  REPLY_CONTENTS
 	  FROM BOARD A INNER JOIN REPLY B ON A.BOARD_ID = B.BOARD_ID
   ```
-  INNER JOIN은 테이블 2개가 매칭되는 키값을 보여줄때 쓴다.
+  INNER JOIN은 테이블 2개가 매칭되는 값을 보여줄때 쓴다.
   
 - Outer Join
 
