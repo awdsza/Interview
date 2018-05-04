@@ -46,9 +46,12 @@
    
 ### 4) batch Module작성법
 
-## 3.DB 페이징 방법
+## 3.DB
 ### 1) db 페이징 방법
 ### 2) index는 어디에 하는게 좋은가?
+Index는 검색속도를 높이기 위해 사용되는 하나의 기술이며 색인이라고 생각하면 된다. 해당 Table의 칼럼을 색인화 하여 검색시 해당 Table의 레코드를 색인화 되어 있는 Index 파일을 검색하여 검색속도를 빠르게 한다.</br>
+  주로 where 절에 사용되는 컬럼, 외래키가 사용되는 열, join에 사용되는 열에 사용한다. 데이터의 중복도가 높은 열은 효율이 나지 않는다.(성별, 타입이 별로 없는 경우)</br>
+  
 ### 3) trigger 써본적 있는가?
 
 ## 4.javascript
@@ -64,3 +67,5 @@
  * [Take Action 신매력(추상화클래스와 인터페이스의 용도, 차이점, 공통)](http://marobiana.tistory.com/58)
  * [Joinc(Thread Pooling)](https://www.joinc.co.kr/w/Site/Thread/Advanced/ThreadPool)
  * [palpit's log-b([Java] 멀티 스레드 - 스레드풀(ThreadPool))](http://palpit.tistory.com/732)
+ ## 3. DB
+  * [후회하기 싫으면 그렇게 살지 말고, 그렇게 살거면 후회하지 마라 ( LIVE A LIFE WITHOUT REGRETS J. )(DB Index 란?)](https://lalwr.blogspot.kr/2016/02/db-index.html)
