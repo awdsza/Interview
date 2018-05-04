@@ -60,8 +60,14 @@
     INSERT, UPDATE, DELETE 문에 대해 한번만 실행된다.<br/>
 ## 4.javascript
 ### 1)jquery에서 element를 제일 빨리 가져오는 것은?
+ (1) ID & Element Selector($(‘#Element, form, input’))<br/>
+   - 내부적으로 브라우저 내장 메소드를 사용하기 때문에 빠르다.(getElementById(), getElementsByTagName())<br/>
+ (2) Class($(".element"))<br/>
+   - 브라우저 내장 메스드 가 IE5~8은 없다. 그래서, 브라우저 내장 메소드 대신 jQuery가 직접 클래스를 찾는기때문에 느리다(getElementsByClassName()).<br/>
+  (3) Pesudo & Attritbute($(‘:visible, :hidden’),$(‘[attribute=value]’))
+   - 2번과 같이 브라우저 내장 메소드가 없기 때문에 jQuery가 직접 찾아야해서 느리다. 
 ### 2)clone 함수용도
-
+ 요소 집합을 복사 할 수 있는 함수이다. '$(element).clone(true[false])' 안에 변수값이 true라면 element의 이벤트도 복사를 할 수 있다. 변수값이 없거나 false면 element내용만 복사 할 수 있다. 
 # 출처
 ## 1.Spring
  * Spring 3입문(하세가와 유이치 오오노 와타루 토키 코헤이 지음, 김성재 옮김)
@@ -75,3 +81,5 @@
   * [후회하기 싫으면 그렇게 살지 말고, 그렇게 살거면 후회하지 마라 ( LIVE A LIFE WITHOUT REGRETS J. )(DB Index 란?)](https://lalwr.blogspot.kr/2016/02/db-index.html)
  * [꿈꾸는 개발자, DBA 커뮤니티 구루비(Trigger)](http://www.gurubee.net/lecture/1076)
  * [위키백과(데이터베이스 트리거)](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%ED%8A%B8%EB%A6%AC%EA%B1%B0)
+ ## 4.javascript
+ * [코드팩토리(jQuery 퍼포먼스 향상을 위한 Tips And Tricks)](http://codefactory.kr/2011/12/07/jquery-performance-tips-and-tricks/)
