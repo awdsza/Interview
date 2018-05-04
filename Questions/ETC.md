@@ -49,11 +49,15 @@
 ## 3.DB
 ### 1) db 페이징 방법
 ### 2) index는 어디에 하는게 좋은가?
-Index는 검색속도를 높이기 위해 사용되는 하나의 기술이며 색인이라고 생각하면 된다. 해당 Table의 칼럼을 색인화 하여 검색시 해당 Table의 레코드를 색인화 되어 있는 Index 파일을 검색하여 검색속도를 빠르게 한다.</br>
+  검색속도를 높이기 위해 사용되는 하나의 기술이며 색인이라고 생각하면 된다. 해당 Table의 칼럼을 색인화 하여 검색시 해당 Table의 레코드를 색인화 되어 있는 Index 파일을 검색하여 검색속도를 빠르게 한다. PK나 Unique조건이 있으면 자동적으로 생성된다.(Unique Index)</br>
   주로 where 절에 사용되는 컬럼, 외래키가 사용되는 열, join에 사용되는 열에 사용한다. 데이터의 중복도가 높은 열은 효율이 나지 않는다.(성별, 타입이 별로 없는 경우)</br>
   
-### 3) trigger 써본적 있는가?
-
+### 3) trigger
+  INSERT, UPDATE, DELETE문이 TABLE에 대해 행해질 때 묵시적으로 수행되는 PROCEDURE 이다. DML의 데이터 상태의 관리를 자동화하는 데 사용된다. 크게 행 트리거와 문장 트리거 두 종류가 있다.<br/>
+  - 행트리거<br/>
+    테이블 안의 영향을 받은 행 각각에 대해 실행된다. 변경 전 또는 변경 후의 행은 OLD, NEW라는 가상 줄 변수를 사용하여 읽을 수 있다.<br/>
+  - 문장 트리거<br/>
+    INSERT, UPDATE, DELETE 문에 대해 한번만 실행된다.<br/>
 ## 4.javascript
 ### 1)jquery에서 element를 제일 빨리 가져오는 것은?
 ### 2)clone 함수용도
@@ -69,3 +73,5 @@ Index는 검색속도를 높이기 위해 사용되는 하나의 기술이며 �
  * [palpit's log-b([Java] 멀티 스레드 - 스레드풀(ThreadPool))](http://palpit.tistory.com/732)
  ## 3. DB
   * [후회하기 싫으면 그렇게 살지 말고, 그렇게 살거면 후회하지 마라 ( LIVE A LIFE WITHOUT REGRETS J. )(DB Index 란?)](https://lalwr.blogspot.kr/2016/02/db-index.html)
+ * [꿈꾸는 개발자, DBA 커뮤니티 구루비(Trigger)](http://www.gurubee.net/lecture/1076)
+ * [위키백과(데이터베이스 트리거)](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%ED%8A%B8%EB%A6%AC%EA%B1%B0)
