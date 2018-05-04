@@ -27,7 +27,21 @@
     (1) Hash Map : (Key : Value) 쌍으로 저장되어있다. 이때 Key는 중복을 허용하지않는다. 빠른 검색이 장점이다.<br/>
     (2) Tree Map : HashMap과 같은 구성이며, 빠른 검색과 Tree의 장점인 정렬과 범위검색의 장점을 모두 가지고 있다 .<br/>
 ### 2) 추상클래스와 interface의 차이점
+  - 공통점
+    (1) 선언만 있고 구현 내용은 없다.
+    (2) new 객체를 생성할 수 없다.
+  - 추상클래스
+    (1) 클래스 내 '추상 메소드'가 하나이상 포함되거나 abstract로 정의된 경우를 말한다.
+    (2) 단일 상속
+    (3) 메소드를 가져다 쓰거나 Override하거나 abstract가 붙은 메소드는 반드시 구현한다.
+  - 인터페이스
+    (1) 메소드에 대한 명시만 있다.
+    (2) 다중 상속
+    (3) 상속받은 메소드는 전부 구현해야한다.
 ### 3) Thread Pool에 대한 설명
+  스레드를 미리 할당해 놓는기법.
+  - 하는 이유
+    (1)
 ### 4) batch Module작성법
 
 ## 3.DB 페이징 방법
@@ -45,4 +59,5 @@
  * [갱짱.study(스프링(Spring) DI(Dependency Injection) - #1](http://gangzzang.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81Spring-IoCDIInversion-of-ControlDependency-Injection)
  ## 2.Java
  * Java의 정석(남궁 성지음)
- * [강관우 Blog(
+ * [Take Action 신매력(추상화클래스와 인터페이스의 용도, 차이점, 공통)](http://marobiana.tistory.com/58)
+ * [Joinc(Thread Pooling)](https://www.joinc.co.kr/w/Site/Thread/Advanced/ThreadPool)
