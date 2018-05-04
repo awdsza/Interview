@@ -6,7 +6,13 @@
 ### 1) Spring에서 중요하게 생각하는것?
 
 ### 2) DI의 개념
-의존 관계 주입. 오브젝트 사이의 의존 관계를 만드는 것. 클래스에서 new 연산자가 사라진다. 펙토리 메소드 같은 디자인 패턴을 구사하지 않아도, DI 컨테이너가 건내주는 인스턴스를 인터페이스로 받아서 인터페이스 기반의 컴포넌트화를 구현할 수 있게 되는것이다.
+  의존 관계 주입. 오브젝트 사이의 의존 관계를 만드는 것.  A라는 클래스에서 B클래스 메소드를 불러와 실행을 하는데 B 메소드의 이름을 바꾸면 똑같이 변경을 해주어야한다. 이러한 경우가 1~2개 이상이면, 유지보수의 어려움을 겪게된다. DI의 역활은 기존방식의 의존성을 제거하고, 3자가 만들어주는 의존객체를 각 클래스에 뿌려주는 기능으로 변경의 유연성을 제공한다.즉, 클래스에서 new 연산자가 사라진다.
+```
+  //기존
+  Private BoardDao dao = new BoardDao();
+  //DI방식
+  private BoardDao dao
+```
  - 장점
    (1) 불필요한 의존 관계를 없애거나 줄일수 있음.<br/>
  - Autowired<br/>
@@ -71,6 +77,7 @@
 # 출처
 ## 1.Spring
  * Spring 3입문(하세가와 유이치 오오노 와타루 토키 코헤이 지음, 김성재 옮김)
+ * [최느님 프알못(Spring 입문 - Spring의 장점(Spring을 쓰는 이유)](http://csw7432.tistory.com/entry/Spring-%EC%9E%85%EB%AC%B8-Spring%EC%9D%98-%EC%9E%A5%EC%A0%90)
  * [갱짱.study(스프링(Spring) DI(Dependency Injection) - #1](http://gangzzang.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81Spring-IoCDIInversion-of-ControlDependency-Injection)
  ## 2.Java
  * Java의 정석(남궁 성지음)
@@ -83,3 +90,4 @@
  * [위키백과(데이터베이스 트리거)](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%ED%8A%B8%EB%A6%AC%EA%B1%B0)
  ## 4.javascript
  * [코드팩토리(jQuery 퍼포먼스 향상을 위한 Tips And Tricks)](http://codefactory.kr/2011/12/07/jquery-performance-tips-and-tricks/)
+ * [jQuery 공작소(.clone())](http://superkts.com/jquery/clone)
