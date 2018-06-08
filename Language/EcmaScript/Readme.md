@@ -30,19 +30,14 @@ Uncaught SyntaxError: Missing initializer in const declaration
 ```
 ### 2.Function</br>
 - Arrow Function</br>
-기존에 function(friend){}을 사용했다면, ES6에서는 (매개변수) =>{}로 사용할 수 있다>
+기존에 function(friend){}을 사용했다면, ES6에서는 (매개변수) =>{}로 사용할 수 있다.
 ```
-const object2 = {
-  name: 'Zero',
-  friends: ['One', 'Two', 'Three'],
-  alertFriends() {     
-    this.friends.forEach((friend) => {
-      console.log(this.name);
-      console.log(friend);
-    });
-  }
-};
-object2.alertFriends();
+var func1 = function(a){ alert(a);};
+func1('BBB');
+```
+```
+let func1 = (a) => {alert(a);};
+func1('AAA'); // alert AAA Print
 ```
 ## 출처
 - [ZeroCho Blog](https://www.zerocho.com/category/EcmaScript/post/5756d488e9c105aaeb550ea5)</br>
