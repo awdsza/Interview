@@ -30,7 +30,7 @@ Uncaught SyntaxError: Missing initializer in const declaration
 ```
 ### 2.Function</br>
 - Arrow Function</br>
-기존에 function(friend){}을 사용했다면, ES6에서는 (매개변수) =>{}로 사용할 수 있다.
+기존에 function(args){}을 사용했다면, ES6에서는 (매개변수) =>{}로 사용할 수 있다.
 ```
 var func1 = function(a){ alert(a);};
 func1('BBB');
@@ -50,6 +50,15 @@ var object = {
 };
 var string = b + ', my ' + object.c; //기존의 Script
 const string2 = `${b}, my ${object.c}`;//ES2016
+```
+### 4.Class
+
+### 5.비구조화(Destructuring)
+객체 속성이나 배열요소를 해체하여 편하게 값을 할당하는 기능이라고 생각하면 된다.
+```
+let [a,b] = [1,2];
+console.log(a); // a
+console.log(b); // b 
 ```
 ## 출처
 - [ZeroCho Blog](https://www.zerocho.com/category/EcmaScript/post/5756d488e9c105aaeb550ea5)</br>
