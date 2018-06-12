@@ -39,6 +39,18 @@ func1('BBB');
 let func1 = (a) => {alert(a);};
 func1('AAA'); // alert AAA Print
 ```
+### 3.템플릿 문자열
+기존 Script 문법은 , 와 +로 문자열을 완성시켜야하는 불편함을 템플릿 문자열(템플릿 대입문)으로 작성할 수 있다. </br>
+그리고 기존의 "나 '같은 따옴표 문자대신 백틱 문자 \` 를 사용한다.</br>
+
+```
+var b = 'hi';
+var object = {
+  c: 'friends'
+};
+var string = b + ', my ' + object.c; //기존의 Script
+const string2 = `${b}, my ${object.c}`;//ES2016
+```
 ## 출처
 - [ZeroCho Blog](https://www.zerocho.com/category/EcmaScript/post/5756d488e9c105aaeb550ea5)</br>
 - [좋은 JavaScript 코드 작성을 위한 블로그](https://cimfalab.github.io/deepscan/2016/07/ecmascript-6)
