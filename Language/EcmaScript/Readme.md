@@ -60,6 +60,16 @@ let [a,b] = [1,2];
 console.log(a); // a
 console.log(b); // b 
 ```
+```
+const obj = {
+a : 'AAAAA',
+b : {
+  c: 'BBBBB'
+}
+};
+const { a, b: { c}  } = obj;
+console.log(a,c); //'AAAAA','BBBBB'
+```
 ## 출처
 - [ZeroCho Blog](https://www.zerocho.com/category/EcmaScript/post/5756d488e9c105aaeb550ea5)</br>
 - [좋은 JavaScript 코드 작성을 위한 블로그](https://cimfalab.github.io/deepscan/2016/07/ecmascript-6)
