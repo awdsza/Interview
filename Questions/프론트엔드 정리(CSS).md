@@ -7,7 +7,7 @@ CSS
 
 2.“reset” CSS가 무엇인지, 어떻게 유용한지 설명해주세요.
 
-  * reset의 뜻은 초기화하다라는 뜻인데, css reset은 단어의 뜻에 맞게 브라우저마다 css속성의 값이 다르기 때문에, 특정태그에 특정 CSS값을 지정해놓고 작업을 하는것을 의미합니다.
+  * reset의 뜻은 초기화하다라는 뜻인데, css reset은 단어의 뜻에 맞게 브라우저마다 css속성의 값이 다르기 때문에, 특정태그에 특정 CSS값을 지정해놓고 작업을 하는것을 의미합니다. 주로 padding, margin,border등의 속성이 브라우져마다 미세하게 차이가 있으므로, 속성들을 초기화 시킨 후 css를 작업하는것이 대표적입니다.
   
   참고 링크1 : [everdevel](https://www.everdevel.com/CSS/css-reset/)
 
